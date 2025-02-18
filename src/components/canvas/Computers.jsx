@@ -24,14 +24,14 @@ const Computers = ({ isMobile }) => {
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    let windowMathMedia = window.matchMedia("(max-width:640px)");
-    setIsMobile(windowMathMedia.matches);
-    const handleWindowMathMedia = (event) => {
+    let windowMatchMedia = window.matchMedia("(max-width:640px)");
+    setIsMobile(windowMatchMedia.matches);
+    const handleWindowMatchMedia = (event) => {
       setIsMobile(event.matches);
     };
-    windowMathMedia.addEventListener("change", handleWindowMathMedia);
+    windowMatchMedia.addEventListener("change", handleWindowMatchMedia);
     return () => {
-      windowMathMedia.removeEventListener("change", handleWindowMathMedia);
+      windowMatchMedia.removeEventListener("change", handleWindowMatchMedia);
     };
   }, []);
   return (
