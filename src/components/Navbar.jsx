@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { styles } from "../styles";
+import  styles  from "../styles";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";

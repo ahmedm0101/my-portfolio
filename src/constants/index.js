@@ -17,6 +17,7 @@ import {
     docker,
     meta,
     starbucks,
+    nextjs,
     tesla,
     shopify,
     carrent,
@@ -50,8 +51,8 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Nextjs Developer",
+      icon: nextjs,
     },
     {
       title: "Content Creator",
@@ -111,6 +112,9 @@ import {
     {
       name: "docker",
       icon: docker,
+    }, {
+      name: "Nextjs",
+      icon: nextjs,
     },
   ];
   
