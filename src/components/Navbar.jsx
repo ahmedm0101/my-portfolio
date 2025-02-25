@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import  styles  from "../styles";
+import styles from "../styles";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${styles.paddingX} w-full flex items-center justify-center !py-5 fixed top-0 z-20 bg-primary`}
+        className={`${styles.paddingX} w-full flex items-center justify-center py-5 fixed top-0 z-20 bg-primary`}
       >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <Link
@@ -53,7 +53,7 @@ const Navbar = () => {
             <div
               className={`${
                 !toggle ? "hidden" : "flex"
-              } !p-6 black-gradient absolute top-12 right-4 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              } p-6 black-gradient absolute top-12 right-4 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
             >
               <ul className="list-none justify-end items-start flex-col gap-4">
                 {navLinks.map((link) => (

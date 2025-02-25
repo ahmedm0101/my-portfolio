@@ -11,6 +11,7 @@ import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
+import sass from "./tech/sass.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -37,6 +38,7 @@ export {
   creator,
   mobile,
   web,
+  sass,
   github,
   menu,
   close,
