@@ -3,6 +3,7 @@ import SectionWrapper from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import styles from "../styles";
+import Earth from "./canvas/Earth";
 
 const Contact = () => {
   const formRef = useRef();
@@ -67,6 +68,12 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+      </motion.div>
+      <motion.div
+        variants={slideIn("right", "between", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <Earth/>
       </motion.div>
     </div>
   );
