@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import styles from "../styles";
 import Earth from "./canvas/Earth";
-
+import emailjs from "@emailjs/browser";
+//template_zswziyj service_i9diacr WBhEuUV1KOtNvHUgf
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -13,8 +14,43 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_i9diacr",
+        "template_zswziyj",
+        {
+          from_name: form.name,
+          to_name: "ahmed",
+          from_email: form.email,
+          to_email: "ahmad.mahmoud1472003@gmail.com",
+          message: form.message,
+        },
+        "WBhEuUV1KOtNvHUgf"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you i will ge back to you as soon as possible.");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Something went wrong.")
+        }
+      );
+  };
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
@@ -73,7 +109,7 @@ const Contact = () => {
         variants={slideIn("right", "between", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <Earth/>
+        <Earth />
       </motion.div>
     </div>
   );
