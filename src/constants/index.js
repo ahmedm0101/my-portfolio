@@ -76,7 +76,6 @@ const services = [
 ];
 
 const technologies = [
-  
   {
     name: "React JS",
     icon: reactjs,
