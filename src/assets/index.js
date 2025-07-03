@@ -29,15 +29,27 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import shop from "./shop.png";
+import YC from "./YC.png";
+import freelance from "./freelance.png";
+import frontend from "./frontend.jpeg";
+import techMember from "./techMember.jpeg";
+import live from "./live.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  techMember,
+  frontend,
+  live,
+  freelance,
   logo,
   backend,
   creator,
   mobile,
   web,
+  shop,
+  YC,
   sass,
   github,
   menu,

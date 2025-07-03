@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Tilt } from "react-tilt";
 import styles from "../styles";
-import { github } from "../assets";
+import { github,live } from "../assets";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  source_live_link
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -37,6 +38,20 @@ const ProjectCard = ({
                 src={github}
                 alt="github"
               />
+              
+            </div>
+          </div>
+                    <div className="flex absolute inset-0 justify-end mt-3 mr-15 card-img_hover">
+            <div
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(source_live_link, "_blank")}
+            >
+              <img
+                className="w-3/4 h-3/4 object-contain rounded-full"
+                src={live}
+                alt="github"
+              />
+              
             </div>
           </div>
         </div>
