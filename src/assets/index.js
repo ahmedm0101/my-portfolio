@@ -31,6 +31,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import shop from "./shop.png";
 import YC from "./YC.png";
+import awwwards from "./awwwards.png";
+import Xora from "./xora.png";
 import freelance from "./freelance.png";
 import frontend from "./frontend.jpeg";
 import techMember from "./techMember.jpeg";
@@ -57,6 +59,8 @@ export {
   nextjs,
   css,
   docker,
+  awwwards,
+  Xora,
   figma,
   git,
   html,

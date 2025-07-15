@@ -31,6 +31,8 @@ import {
   threejs,
   shop,
   YC,
+  awwwards,
+  Xora,
 } from "../assets";
 
 export const navLinks = [
@@ -108,6 +110,19 @@ const experiences = [
       "Collaborated with clients across 5+ industries to deliver high-quality, user-focused digital experiences.",
     ],
   },
+
+  {
+    title: "Tech Club Member",
+    company_name: "Cairo University",
+    icon: techMember, // Replace with your actual icon reference
+    iconBg: "#383E56",
+    date: "2021 - Present",
+    points: [
+      "Organized university tech events and hackathons to foster collaboration among students.",
+      "Mentored junior students on front-end development best practices.",
+      "Contributed to multiple university projects with hands-on involvement.",
+    ],
+  },
   {
     title: "Frontend Developer (Graduation Project)",
     company_name: "Cairo University",
@@ -119,18 +134,6 @@ const experiences = [
       "Collaborating with team members to meet deadlines and ensure quality standards.",
       "Utilizing modern libraries and tools to enhance project functionality and user experience.",
       "Improved user satisfaction by 25% through advanced tools and user-centric features.",
-    ],
-  },
-  {
-    title: "Tech Club Member",
-    company_name: "Cairo University",
-    icon: techMember, // Replace with your actual icon reference
-    iconBg: "#383E56",
-    date: "2021 - Present",
-    points: [
-      "Organized university tech events and hackathons to foster collaboration among students.",
-      "Mentored junior students on front-end development best practices.",
-      "Contributed to multiple university projects with hands-on involvement.",
     ],
   },
 ];
@@ -181,8 +184,8 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/ahmedm0101/cars",
     source_live_link: "https://cars-three-omega.vercel.app/",
+    source_code_link: "https://github.com/ahmedm0101/cars",
   },
   {
     name: "e-commerce",
@@ -226,7 +229,51 @@ const projects = [
     ],
     image: YC,
     source_live_link: "https://yc-directory-kappa-three.vercel.app/",
-    source_code_link: "https://yc-directory-kappa-three.vercel.app/",
+    source_code_link: "https://github.com/ahmedm0101/yc_directory",
+  },
+  {
+    name: "Awwwards",
+    description:
+      "Build a visually captivating website inspired by Zentry, featuring scroll-triggered animations, geometric transitions, and engaging video storytelling. Learn how to deliver a luxurious, modern feel, focusing on engaging UI/UX and smooth responsiveness.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: awwwards,
+    source_live_link: "https://awwwards-lime.vercel.app/",
+    source_code_link: "https://github.com/ahmedm0101/Awwwards",
+  },
+  {
+    name: "Xora",
+    description:
+      "Xora is a Modern UI/UX SaaS website developed using React.js and Tailwind CSS that exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "_____",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Xora,
+    source_live_link: "https://xora-lemon-nu.vercel.app/",
+    source_code_link: "https://github.com/ahmedm0101/Xora",
   },
 ];
 
